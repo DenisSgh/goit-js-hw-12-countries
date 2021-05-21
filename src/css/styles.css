@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: #a7ffff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.input {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px 15px;
+
+  width: 700px;
+  font-size: 30px;
+  color: #ff8c58;
+  background-color: #e0ffff;
+  border-color: #ffc0cb;
+}
+
+.input::placeholder {
+  color: #ffc0cb;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgb(255, 192, 203, 1);
+}
+
+.countries {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 15px;
+
+  background-color: #e0ffff;
+  border: 2px solid #ffc0cb;
+}
+
+.country-container {
+  display: flex;
+}
+
+.title {
+  margin-bottom: 15px;
+  font-size: 30px;
+  color: #ff8c58;
+}
+
+.country-description {
+  margin-right: 40px;
+}
+
+.subtitle {
+  margin-bottom: 15px;
+
+  font-size: 24px;
+  color: #ff8c58;
+}
+
+.response-text {
+  text-decoration: underline;
+  font-size: 20px;
+  color: #000;
+}
+
+.language {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.decoration {
+  text-decoration: underline;
+}
+
+.countries-list {
+  padding: 0 15px;
+  width: 600px;
+  background-color: #e0ffff;
+  border: 2px solid #ffc0cb;
+  font-size: 30px;
+  color: #ff8c58;
+}
+
+.countries-list .item {
+  padding: 10px 0;
+}
+
+.countries-list .item:not(:last-child) {
+  border-bottom: 1px solid #ffc0cb;
+}
