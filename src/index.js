@@ -1,26 +1,3 @@
-//! Сделать проверку на >10 элементов
-//! Сделать проверку на 1 элемент
-//! Добавить стилей
-
-// import './css/styles.css';
-// import { refs } from './js/refs.js';
-// import { fetchCountry } from './js/fetchCountries.js';
-// import { tooManyMatches, invalidRequest } from './js/notifications.js';
-
-// var debounce = require('lodash.debounce');
-
-// refs.input.addEventListener('input', debounce(onInputTyping, 500));
-
-// function onInputTyping() {
-//   if (refs.input.value) {
-//     return function onSearch() {
-//       const input = refs.input.value;
-
-//       fetchCountry(input).then(renderCountriesOrCard);
-//     };
-//   }
-//   refs.countries.innerHTML = '';
-// }
 import './css/styles.css';
 import { refs } from './js/refs.js';
 import { fetchCountry } from './js/fetchCountries.js';
@@ -45,9 +22,11 @@ function onInputTyping() {
 function renderCountriesOrCard(country) {
   if (country.length > 10) {
     tooManyMatches();
-  } else {
+  } else if (country.length === 1) {
     const markup = countryTpl(country);
     refs.countries.innerHTML = markup;
+  } else {
+    const markup = countryListTpl(country);
+    refs.countries.innerHTML = markup;
   }
-  // const markupList = countryListTpl(country);
 }

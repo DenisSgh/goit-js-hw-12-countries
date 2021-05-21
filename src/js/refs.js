@@ -1,4 +1,4 @@
 export const refs = {
-  countries: document.querySelector('.countries'),
+  countries: document.querySelector('[data-action="countries"]'),
   input: document.querySelector('.input'),
 };
