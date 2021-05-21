@@ -24,4 +24,4 @@ var t=arguments[3],e="Expected a function",n=NaN,r="[object Symbol]",i=/^\s+|\s+
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./css/styles.css");var e=require("./js/refs.js"),s=require("./js/fetchCountries.js"),t=require("./js/notifications.js"),r=i(require("./templates/country.hbs")),n=i(require("./templates/countryList.hbs"));function i(e){return e&&e.__esModule?e:{default:e}}var u=require("lodash.debounce");function o(){if(e.refs.input.value){const t=e.refs.input.value;(0,s.fetchCountry)(t).then(c)}e.refs.countries.innerHTML=""}function c(s){if(s.length>10)(0,t.tooManyMatches)();else if(1===s.length){const t=(0,r.default)(s);e.refs.countries.innerHTML=t}else{const t=(0,n.default)(s);e.refs.countries.innerHTML=t}}e.refs.input.addEventListener("input",u(o,500));
 },{"./css/styles.css":"krre","./js/refs.js":"VyiV","./js/fetchCountries.js":"irxn","./js/notifications.js":"w6UM","./templates/country.hbs":"xAbl","./templates/countryList.hbs":"uswH","lodash.debounce":"PZFh"}]},{},["Focm"], null)
-//# sourceMappingURL=/parcel-project-template/src.e94da009.js.map
+//# sourceMappingURL=/goit-js-hw-12-countries/src.e94da009.js.map
